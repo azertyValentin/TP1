@@ -1,6 +1,7 @@
 package modele;
 
-
+// Classe gérant une ressource et son versionnage
+// 2 attributs : - la ressource - la version de la ressource
 public class Versionneur {
 
 	private int version;
@@ -10,6 +11,7 @@ public class Versionneur {
 		System.out.println("Initialisation d'un versionneur " + this + " : " + this.getClass());
 		System.out.println("- Version initiale : 0");
 		System.out.println("- Ressource : " + d + " : " + d.getClass());
+		// Version de 0 au départ
 		this.version = 0;
 		this.ressource = d;
 	}

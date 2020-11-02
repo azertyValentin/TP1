@@ -31,6 +31,7 @@ public class AjouterVersionAuxReponses implements ContainerResponseFilter {
 	@Override
 	public void filter(ContainerRequestContext requete,
 			ContainerResponseContext reponse) throws IOException {
+		// On set le flag etag avec la version de la ressource
 		OutilsHttp.setEtag(reponse, ressourceVersionnee.getVersion());
 	}
 
